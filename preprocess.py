@@ -4,7 +4,6 @@ import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
 
-
 #Feature Extractor, Dataset Creation Functions
 max_pad_length = 86
 def extract_features_cnn(file_name):
@@ -22,7 +21,6 @@ def extract_features_cnn(file_name):
     
 
 def create_dataset(path,column_name):
-
     features=[]
     count=0
     for filename in tqdm(os.listdir(path)):
